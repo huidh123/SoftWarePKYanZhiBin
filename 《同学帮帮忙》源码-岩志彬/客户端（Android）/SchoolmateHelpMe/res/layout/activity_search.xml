@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/search_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/actionbar_back" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/line_actionbar_divider" />
+        
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingTop="2dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="1dp"
+            android:singleLine="true"
+            android:hint="请输入搜索关键字"
+            android:background="#FFFFFF"
+            android:textColor="#888"
+            android:textSize="18sp" />
+        
+        <ImageView 
+        	android:layout_width="1dp"
+        	android:layout_height="match_parent"
+        	android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+        	android:background="#6456648f"/>
+        
+    	<ImageView 
+        	android:layout_width="1dp"
+        	android:layout_height="match_parent"
+        	android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+        	android:background="#ffffffff"/>
+        
+        <ImageButton
+            android:id="@+id/search_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/background_search"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#87CEFF" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#E4E4E4">
+        <ImageView 
+        	android:layout_width="fill_parent"
+        	android:layout_height="5dp"/>
+    
+    	<com.SHM.view.FooterLoad
+        	android:id="@+id/search_listview"
+        	android:layout_width="fill_parent"
+        	android:layout_height="match_parent"
+        	android:divider="#00000000" />
+    </LinearLayout>
+    
+
+</LinearLayout>

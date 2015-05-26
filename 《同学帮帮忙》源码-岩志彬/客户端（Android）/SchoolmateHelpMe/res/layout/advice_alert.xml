@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        	<EditText
+        		android:id="@+id/advice_alert_et"
+        		android:layout_width="280dp"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="20dp"
+        		android:lines="7"
+        		android:inputType="textMultiLine"
+        		android:hint="    点击此处输入您对于“同学帮帮忙”的建议,我们将竭尽全力进行完善~为大家创造一个更好的校内互助环境~"
+        		android:textColorHint="#e4e0e0"
+        		android:textSize="16sp"
+        		android:padding="9sp"
+        		android:textColor="#696969"
+        		android:layout_gravity="center_horizontal"
+        		android:background="@drawable/background_edittext" />
+    
+    		<Button
+        		android:id="@+id/bt_alert_advice"
+        		android:layout_width="80dp"
+        		android:layout_height="40dp"
+        		android:layout_marginTop="10dp"
+        		android:layout_marginBottom="10dp"
+        		android:background="@drawable/background_enterbtn"
+        		android:layout_gravity="center"/>
+    </LinearLayout>
+    
+</LinearLayout>

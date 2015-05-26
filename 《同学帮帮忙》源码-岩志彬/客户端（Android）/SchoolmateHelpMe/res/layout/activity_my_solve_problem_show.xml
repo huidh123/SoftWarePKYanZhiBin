@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/showquestionback"
+        android:orientation="horizontal" >
+     
+        <ImageView
+            android:id="@+id/my_solve_problem_show_picid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp" />
+      
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+            <TextView
+            android:id="@+id/my_solve_problem_show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:maxLength="30"
+            android:textColor="#191970" 
+            android:textSize="16dp"
+             >
+            </TextView>
+            <ImageView
+            android:id="@+id/my_solve_problem_show_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp" />
+            <View 
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+            android:id="@+id/my_solve_problem_show_id"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:maxLength="11"
+            android:layout_marginLeft="5dp"
+            android:textColor="#191970" 
+            android:textSize="16dp"/>
+            </LinearLayout>
+           <TextView
+            android:id="@+id/my_solve_problem_show_time"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp"
+            android:maxLength="30"
+            android:textColor="#808069"
+            android:textSize="15dp" >
+           </TextView>
+         </LinearLayout>
+      </LinearLayout>
+      
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/showquestionback"
+        android:orientation="vertical" >
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:orientation="horizontal"
+               android:background="#CD5C5C">
+               <ImageView
+            		android:background="@drawable/moneyshowquestion"
+            		android:layout_width="30dp"
+            		android:layout_height="25dp"
+            		android:layout_marginLeft="4dp"
+            		android:layout_marginTop="5dp" />
+         		<TextView
+            		android:id="@+id/my_solve_problem_show_givedpoints"
+            		android:layout_width="wrap_content"
+            		android:layout_height="25dp"
+            		android:layout_marginRight="12dp"
+            		android:layout_marginBottom="1dp"
+            		android:layout_gravity="center_vertical"
+            		android:textColor="#FFFFFF"
+            		android:textSize="20dp"
+            		android:textStyle="bold" />
+           </LinearLayout>
+        
+         <TextView
+            android:id="@+id/my_solve_problem_show_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:maxLength="12"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp">
+         </TextView>
+       </LinearLayout>
+       <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+          <TextView
+            android:id="@+id/my_solve_problem_show_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#808069"
+            android:singleLine="false"
+        	android:maxLines="11"
+        	android:lines="11"
+            android:textSize="17dp" />
+       </LinearLayout>
+    
+    </LinearLayout>
+  
+      <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/foot"
+         >
+       </ImageView>
+</LinearLayout>
+

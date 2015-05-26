@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+       
+        	<TextView
+        		android:layout_width="280dp"
+        		android:layout_height="wrap_content"
+        		android:textSize="16sp"
+        		android:layout_marginTop="20dp"
+        		android:textColor="#696969"
+        		android:layout_gravity="center_horizontal"
+        		android:text="     同学你好，该应用为校内实名应用呦~我们不提供自主注册功能，你可以通过以下QQ联系我们进行注册~"/>
+    		<TextView
+        		android:layout_width="280dp"
+        		android:layout_height="wrap_content"
+        		android:textSize="16sp"
+        		android:textColor="#696969"
+        		android:layout_marginTop="5dp"
+        		android:layout_gravity="center_horizontal"
+        		android:text="联系QQ："/>
+    		<Button
+        		android:id="@+id/bt_register_alert"
+        		android:layout_width="80dp"
+        		android:layout_height="40dp"
+        		android:layout_marginTop="10dp"
+        		android:layout_marginBottom="10dp"
+        		android:background="@drawable/background_enterbtn"
+        		android:layout_gravity="center"/>
+    </LinearLayout>
+    
+</LinearLayout>

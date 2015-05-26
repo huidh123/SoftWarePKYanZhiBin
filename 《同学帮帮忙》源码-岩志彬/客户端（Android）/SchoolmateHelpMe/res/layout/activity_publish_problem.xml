@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.SHM.activity.ReleaseProblem" >
+    
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/showquestionback"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#808069"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="标题:"
+       />
+    <EditText
+        android:id="@+id/publish_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="4dp"
+        android:textColor="#191970"
+        android:textSize="21dp"
+        android:maxLength="12"
+        android:background="#FFFFFF"
+        android:hint="标题请限制在12个字以内"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+      android:background="@drawable/showquestionback"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#808069"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="内容:"
+       />
+    <EditText
+        android:id="@+id/publish_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="4dp"
+        android:textColor="#191970"
+        android:textSize="17dp"
+        android:background="#FFFFFF"
+        android:hint="你可以在这里详细的描述你所需要小伙伴们怎么帮助你，对了~记得留联系方式哦，亲"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="#808069"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="积分:"
+       />
+    <EditText
+        android:id="@+id/publish_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:maxLines="11"
+        android:layout_marginRight="4dp"
+        android:textColor="#191970"
+        android:textSize="17dp"
+        android:hint="给帮助你的小伙伴多少积分呢"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:inputType="number"
+       />
+    </LinearLayout>
+    
+     <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6456648f"/>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+    
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@drawable/showquestionback"
+         android:orientation="horizontal">
+       <Button 
+         android:id="@+id/publish_back"
+         android:layout_width="170dp"
+         android:layout_height="40dp"
+         android:background="@drawable/back"
+         />
+
+       <Button
+           android:id="@+id/publish_publish"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@drawable/publish" />
+       </LinearLayout>
+  
+      <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/foot"
+         >
+       </ImageView>
+    
+</LinearLayout>

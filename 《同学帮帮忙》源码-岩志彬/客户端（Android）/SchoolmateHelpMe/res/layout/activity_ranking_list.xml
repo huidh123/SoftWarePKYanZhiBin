@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginLeft="7dp"
+            android:text="您以"/>
+        <TextView 
+            android:id="@+id/my_rank_points"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="#FF0066CC"
+            android:gravity="center"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="的积分，排在第"/>
+        <TextView 
+            android:id="@+id/my_rank_place"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="#FF0066CC"
+            android:gravity="center"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="名"/>
+        <TextView 
+            android:id="@+id/my_rank_isIn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="，恭喜上榜"/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6456648f"/>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+    
+    <ListView 
+        android:id="@+id/ranking_list_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000">
+    </ListView>
+    
+    
+</LinearLayout>

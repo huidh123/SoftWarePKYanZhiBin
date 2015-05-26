@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/tab_publish_listview_fresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    
+    	<com.SHM.view.FooterLoad
+     		android:id="@+id/tab_publish_listview"
+     		android:layout_width="fill_parent"
+     		android:layout_height="fill_parent"
+     		android:divider="#00000000"
+     	/>
+	</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
